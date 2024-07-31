@@ -1,0 +1,132 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: linear-gradient(270deg, #f76945,#fab92e,#2efa9e ,#2eb9fa,#cbf33a ); */ 
+    background-size:400% 400%;
+    font-family: "Roboto", sans-serif;
+    background-color: white; 
+  } 
+  .container{
+    display: flex;
+    gap: 20px;
+  }
+  .temp{
+    width: 300px;
+    height: 430px;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.123); /* Semi-transparent background */
+    backdrop-filter: blur(2px);
+    /* background: linear-gradient(270deg, #2efa9e ,#2eb9fa ); */
+    color: white;
+    z-index: 999;
+    /*border: 2px solid white;*/
+  }
+  .search-container{
+    display: inline-block;
+  }
+  .others{
+    width: 800px;
+    height: 430px;
+    border-radius: 10px;
+    /*background: linear-gradient(270deg, #2efa9e ,#2eb9fa ); */
+    padding: 30px;
+    z-index: 999;
+    /*border: 2px solid white;*/
+    background: rgba(255, 255, 255, 0.123); /* Semi-transparent background */
+    backdrop-filter: blur(2px);
+  }
+  .temp input{
+    height: 35px;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid rgb(226, 223, 223);
+    padding-left: 10px;
+  }
+  .temp button{
+    height: 40px;
+    width: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: white;
+    color:rgb(125, 188, 243);;
+  } 
+  .temp input:focus{
+    outline: none;
+  }
+  .temp img{
+    width: 150px;
+    height: 150px;
+  }
+  .temperature{
+    font-size: x-large;
+    font-weight: 50;
+    margin-top: 0;
+    padding-top: 0;
+    transform: translateY(-20px);
+  }
+  #location{
+       transform: translateY(-30px);
+       font-weight: 300;
+       font-size: larger;
+  }
+   .humid_wind{
+    display: flex;
+    padding-left:20px;
+    gap: 40px;
+    color: white;
+  } 
+  .humid_wind img{
+    width: 40px;
+    height: 40px;
+  }
+  .humidity{
+    display: flex;
+    gap: 7px;
+  }
+  .wind{
+    display: flex;
+    gap: 7px;
+  }
+  .humid_wind span{
+    font-weight: 600;
+  }
+  .icon{
+    filter: invert(100%);
+  }
+   .video-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensures the video stays in the background */
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+li{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cards{
+  color: white;
+}
